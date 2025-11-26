@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="card fade-in">
+
+    <h1 class="title">Weather App</h1>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Search for a city..." />
+      <button id="searchBtn">🔍</button>
+      <button id="locationBtn">📍</button>
+    </div>
+
+    <p id="error" class="error hidden">City not found ❌</p>
+
+    <div id="weatherResult" class="weather-box hidden">
+      <img id="weatherIcon" src="" alt="Weather icon">
+
+      <h2 id="cityName"></h2>
+      <p id="temp"></p>
+      <p id="desc"></p>
+      <p id="wind"></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
